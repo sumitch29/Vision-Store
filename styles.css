@@ -1,0 +1,52 @@
+.color-w{
+    color: var(--background-color);
+    z-index: 1;
+}
+
+.header-container{
+    position: fixed;
+    top: 0;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.search{
+   width: 40rem;
+   height: 3rem;
+}
+
+.search-box{
+    margin-left: auto;
+}
+.top-5{
+    position: relative;
+    top:15rem
+}
+.page{
+    position: relative;
+    top:6rem;
+}
+
+.image-box1{ 
+    position: relative;
+    top: 10px;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 2rem;
+}
+
+.grid-c4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    outline: 2px solid black;
+    justify-content: space-evenly;
+    padding-left: 8rem;
+}
+
+.brand-box{
+    width: 20rem;
+    height: 20rem;
+}
