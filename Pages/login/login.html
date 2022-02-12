@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vision Store : login</title>
   <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/Pages/login/login.css">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico" />
   <link rel="stylesheet" href="https://vision-ui.netlify.app/styles.css" />
 </head>
@@ -14,7 +15,7 @@
 <body>
   <section>
     <header class="header-container">
-      <h1 class="header-heading">Vision Store</h1>
+      <h1 class="header-heading"><a href="/index.html">Vision Store</a></h1>
       <div class="header-link">
         <p class="home-link">
           <a class="color-w" href="/index.html">Home</a>
@@ -38,6 +39,21 @@
             Cart</i></a>
       </div>
     </header>
+    <main class="page">
+      <div class="login-bo">
+        <h3 class="">Login</h3>
+        <label class="padding-top-bottom email-left" >Email address</label>
+        <input class="email-input" type="text" placeholder="user@gmail.com">
+        <label class="padding-top-bottom password-left">Password</label>
+        <input class="password-input" type="password" placeholder="*********">
+        <div class="inline-box padding-top-bottom">
+        <input type="checkbox"><label class="font-s"> Remember me</label><p></p>
+        <p class="font-s primary-font padding-left"> Forgot your Password?</p>
+        </div>
+        <button class="btn primary solid-btn primary-hover">Login</button>
+        <p><a href="/Pages/signeup/signup.html">Creat New Account ></a></p>
+    </div>
+    </main>
   </section>
 </body>
 </html>
