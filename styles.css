@@ -14,12 +14,13 @@
 }
 
 .search{
-   width: 40rem;
+   width: 45rem;
    height: 3rem;
 }
 
 .search-box{
-    margin-left: auto;
+  padding-left: 5rem;
+    
 }
 .top-5{
     position: relative;
