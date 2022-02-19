@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vision Store : Cart</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/Pages/cart/cart.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://vision-ui.netlify.app/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vision Store : Cart</title>
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico" />
-  <link rel="stylesheet" href="https://vision-ui.netlify.app/styles.css" />
-</head>
-
-<body>
-  <section>
-    <header class="header-container">
-      <h1 class="header-heading"><a href="/index.html">Vision Store</a></h1>
-      <div class="header-link">
-        <p class="home-link">
-          <a class="color-w" href="/index.html">Home</a>
-        </p>
-        <p class="doc-link">
-          <a class="color-w" href="/Pages/productlisting/product.html">Store</a>
-        </p>
-      </div>
-      <div class="search-box center">
-        <input class="padding-5 search" type="text" name="" id="" placeholder="Search" />
+  <body>
+    <section>
+      <header class="header-container">
+        <h1 class="header-heading"><a href="/index.html">Vision Store</a></h1>
+        <div class="header-link">
+          <p class="home-link">
+            <a class="color-w" href="/index.html">Home</a>
+          </p>
+          <p class="doc-link">
+            <a class="color-w" href="/Pages/productlisting/product.html"
+              >Store</a
+            >
+          </p>
         </div>
-      <div class="headerlink-nav">
-        <a class="color-w" href="/Pages/login/login.html"><i
-            class="fas fa-user font-m headerlink-nav-icon center flex-column">
-            Login</i></a>
-        <a class="color-w" href="/Pages/wishlist/wishlist.html"><i
-            class="fas fa-heart font-m headerlink-nav-icon center flex-column">
-            Wishlist</i></a>
-        <a class="color-w" href="/Pages/cart/cart.html"><i
-            class="fas fa-shopping-cart font-m headerlink-nav-icon center flex-column">
-            Cart</i></a>
-      </div>
-    </header>
-  </section>
-</body>
+        <div class="search-box center">
+          <input
+            class="padding-5 search"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search"
+          />
+        </div>
+        <div class="headerlink-nav">
+          <a class="color-w" href="/Pages/login/login.html"
+            ><i
+              class="fas fa-user font-m headerlink-nav-icon center flex-column"
+            >
+              Login</i
+            ></a
+          >
+          <a class="color-w" href="/Pages/wishlist/wishlist.html"
+            ><i
+              class="fas fa-heart font-m headerlink-nav-icon center flex-column"
+            >
+              Wishlist</i
+            ></a
+          >
+          <a class="color-w" href="/Pages/cart/cart.html"
+            ><i
+              class="fas fa-shopping-cart font-m headerlink-nav-icon center flex-column"
+            >
+              Cart</i
+            ></a
+          >
+        </div>
+      </header>
+      <main class="page">
+        <div class="cart-title">
+          <h1>My Cart</h1>
+        </div>
+        <div class="cart-page">
+          <div class="grid1-3">
+            <div>
+              <img
+                class="img-vertical"
+                src="/assets/Product listing/iphone 13 pro max.jpg"
+                alt=""
+              />
+            </div>
+            <div class="cart-info">
+              <p class="brand-name">Apple</p>
+              <p class="font-s">iPhone 13 Pro Max (Sierra Blue, 1 TB)</p>
+              <h2>RS. 1,74,900</h2>
+              <p class="font-s">
+                Quantity :
+                <input type="number" name="" id="" min="0" max="10" value="2" />
+              </p>
+              <button class="btn-cart secondary solid-btn secondary-hover">
+                Remove From Cart
+              </button>
+              <button
+                class="btn-wishlist warning outline-warning outline-warningbtn"
+              >
+                Add to Wishlist
+              </button>
+            </div>
+          </div>
+
+          <div class="price-box">
+            <h1 class="price-heading">PRICE DETAILS</h1>
+            <div class="end">
+              <p class="padding-5 font-s">Price (2 items)</p>
+              <p class="padding-5 font-s">₹3,49,800</p>
+            </div>
+            <div class="end">
+              <p class="padding-5 font-s">Discount</p>
+              <p class="padding-5 font-s">- ₹9,800</p>
+            </div>
+            <div class="end">
+              <p class="padding-5 font-s">Delivery Charges</p>
+              <p class="padding-5 font-s">0</p>
+            </div>
+            <div class="end total-amount">
+              <h1 class="padding-5 font-s">Total Amount</h1>
+              <h1 class="padding-5 font-s">₹3,40,000</h1>
+            </div>
+            <p class="font-s padding-5">You will save ₹9800 on this order</p>
+            <button class="btn-1 primary solid-btn primary-hover font-s">
+              Place Order
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
 </html>
